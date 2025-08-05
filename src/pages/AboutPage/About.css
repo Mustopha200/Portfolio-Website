@@ -1,0 +1,98 @@
+/* src/pages/About.css */
+
+.about-container {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: grey;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+}
+
+nav a.active {
+  color: purple;
+  font-weight: bold;
+}
+
+.profile-icon {
+  font-size: 20px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 40px;
+  gap: 40px;
+}
+
+.about-text {
+  width: 100%;
+}
+
+.about-text h1,
+.about-text h2 {
+  font-size: 60px;
+  margin-bottom: 60px;
+}
+
+.arrow {
+  color: purple;
+  margin-right: 10px;
+}
+
+.highlight {
+  color: purple;
+}
+
+.about-text p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: -30px;
+  margin-left: 75px;
+}
+
+.skills-list {
+  display: flex;
+  gap: 60px;
+  margin-left: 23%;
+  margin-top: -3%;
+  
+}
+.skills-list li {
+  list-style: none;
+  font-size: 20px;
+  margin-left: 43px;
+}
+.about-image img {
+  max-width: 500px;
+  border-radius: 5px;
+  margin-left: -60%;
+  margin-top: -57%;
+}
+.together{
+  margin-left: 23%;
+  margin-top: -5%;
+}
+
+

@@ -1,0 +1,65 @@
+.projects-container {
+  padding: 40px;
+  background: #f3f3f3;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.projects-header {
+  margin-bottom: 30px;
+}
+
+.projects-header h1 {
+  font-size: 2.5rem;
+  color: #000;
+  margin-left: 10%;
+}
+
+.icon {
+  color: #8300ff;
+}
+
+.dot {
+  color: #8300ff;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: linear-gradient(to bottom, #eee, #ddd);
+  padding: 180px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  justify-content: space-around;
+  margin-left: 70px;
+}
+
+.description {
+  font-size: 0.85rem;
+  margin: 10px 0;
+  color: #444;
+}
+
+
+.project-img {
+  border-radius: 10px;
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  margin-top: -60px;
+}
+.project-img1 {
+  border-radius: 10px;
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  margin-top: -60px;
+
+}
+
+.project-img.small {
+  width: 300px;
+  height: 300px;
+}
+
