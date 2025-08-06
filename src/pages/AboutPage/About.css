@@ -2,37 +2,9 @@
 
 .about-container {
   font-family: sans-serif;
-  padding: 0;
-  margin: 0;
+  padding: 10px;
+  margin: 10px;
   background-color: white;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  border-bottom: 1px solid #ddd;
-}
-
-.logo {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.logo span {
-  color: grey;
-}
-
-nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: black;
-}
-
-nav a.active {
-  color: purple;
-  font-weight: bold;
 }
 
 .profile-icon {
@@ -87,7 +59,7 @@ nav a.active {
 .about-image img {
   max-width: 500px;
   border-radius: 5px;
-  margin-left: -60%;
+  margin-right: 40px;
   margin-top: -57%;
 }
 .together{
@@ -96,3 +68,38 @@ nav a.active {
 }
 
 
+@media screen and (max-width: 768px) {
+   .about-content {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .about-text h1,
+  .about-text h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .about-text p {
+    margin-left: 40px;
+    font-size: 16px;
+  }
+
+  .skills-list {
+    margin-left: 15%;
+    gap: 30px;
+  }
+
+  .about-image img {
+    max-width: 350px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+  }
+
+  .together {
+    margin-left: 15%;
+    margin-top: -3%;
+  }
+}

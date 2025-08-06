@@ -49,6 +49,7 @@
   object-fit: cover;
   margin-top: -60px;
 }
+
 .project-img1 {
   border-radius: 10px;
   width: 400px;
@@ -61,5 +62,37 @@
 .project-img.small {
   width: 300px;
   height: 300px;
+}
+
+@media screen and (max-width: 1024px) {
+  .projects-container {
+    padding: 20px;
+  }
+
+  .projects-header h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .projects-grid {
+    padding: 60px 20px;
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-img,
+  .project-img1,
+  .project-img.small {
+    width: 90%;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .description {
+    font-size: 1rem;
+    text-align: center;
+  }
 }
 

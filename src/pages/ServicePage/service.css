@@ -52,3 +52,22 @@
   font-size: 1.1rem;
   color: #222;
 }
+
+
+@media screen and (max-width: 600px) {
+  .services-title {
+    font-size: 1.6rem;
+  }
+
+  .services-card {
+    padding: 30px 10px;
+  }
+
+  .services-column h2 {
+    font-size: 1.2rem;
+  }
+
+  .services-column p {
+    font-size: 0.95rem;
+  }
+}
