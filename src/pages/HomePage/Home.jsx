@@ -5,8 +5,6 @@ import Image3 from "../../assets/half.jpg"
 import Image2 from "../../assets/image.jpg"
 
 
-
-
 const Home = () => {
   return (
     <>
