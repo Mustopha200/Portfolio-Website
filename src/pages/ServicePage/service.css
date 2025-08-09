@@ -1,18 +1,19 @@
 .services-container {
-  padding: 40px;
+  padding: 40px 20px;
   font-family: Arial, sans-serif;
   background: #f3f3f3;
   min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .services-header {
   margin-bottom: 30px;
+  text-align: center; /* Center title for all screen sizes */
 }
 
 .services-title {
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
   color: #000;
-  margin-left: 220px;
 }
 
 .icon {
@@ -25,20 +26,19 @@
 
 .services-card {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap; /* Allow wrapping on mobile */
+  justify-content: space-around;
   background: linear-gradient(to bottom, #eee, #ddd);
   border-radius: 10px;
-  padding: 30px;
+  padding: 40px 20px; /* Reduced padding for responsiveness */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 150px;
+  gap: 30px;
 }
 
 .services-column {
-  flex: 1;
-  padding: 0 20px;
-  justify-items: center;
-  margin-top: -10%;
-  
+  flex: 1 1 250px; /* Flexible columns that wrap */
+  padding: 10px;
+  text-align: center;
 }
 
 .services-column h2 {
@@ -53,14 +53,29 @@
   color: #222;
 }
 
+/* Tablet & below */
+@media screen and (max-width: 900px) {
+  .services-card {
+    justify-content: center;
+    padding: 30px 15px;
+  }
+}
 
+/* Mobile */
 @media screen and (max-width: 600px) {
   .services-title {
     font-size: 1.6rem;
   }
 
   .services-card {
-    padding: 30px 10px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .services-column {
+    flex: 1 1 100%;
+    max-width: 300px;
   }
 
   .services-column h2 {

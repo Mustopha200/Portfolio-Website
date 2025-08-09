@@ -1,31 +1,29 @@
-/* src/pages/About.css */
-
 .about-container {
   font-family: sans-serif;
   padding: 10px;
-  margin: 10px;
+  margin: 0;
   background-color: white;
-}
-
-.profile-icon {
-  font-size: 20px;
+  overflow-x: hidden; /* prevent horizontal scroll */
 }
 
 .about-content {
   display: flex;
   justify-content: space-between;
-  padding: 60px 40px;
+  align-items: flex-start;
+  padding: 60px 5%;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .about-text {
-  width: 100%;
+  flex: 1 1 300px;
+  min-width: 250px;
 }
 
 .about-text h1,
 .about-text h2 {
-  font-size: 60px;
-  margin-bottom: 60px;
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  margin-bottom: 20px;
 }
 
 .arrow {
@@ -38,68 +36,80 @@
 }
 
 .about-text p {
-  font-size: 20px;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
   line-height: 1.5;
-  margin-top: -30px;
-  margin-left: 75px;
+  margin-top: 0;
 }
 
 .skills-list {
   display: flex;
-  gap: 60px;
-  margin-left: 23%;
-  margin-top: -3%;
-  
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin-top: 20px;
 }
+
 .skills-list li {
   list-style: none;
-  font-size: 20px;
-  margin-left: 43px;
+  font-size: 1rem;
 }
+
+.about-image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
 .about-image img {
-  max-width: 500px;
+  width: 100%;
+  max-width: 400px;
   border-radius: 5px;
-  margin-right: 40px;
-  margin-top: -57%;
-}
-.together{
-  margin-left: 23%;
-  margin-top: -5%;
+  height: auto;
 }
 
+.together {
+  margin-bottom: 20px;
+}
 
+/* Tablet and below */
 @media screen and (max-width: 768px) {
-   .about-content {
+  .about-content {
     flex-direction: column;
     padding: 40px 20px;
-    gap: 30px;
+    gap: 20px;
+    align-items: center;
   }
 
-  .about-text h1,
-  .about-text h2 {
-    font-size: 40px;
-    margin-bottom: 30px;
+  .about-text {
+    text-align: center;
   }
 
   .about-text p {
-    margin-left: 40px;
-    font-size: 16px;
+    margin-left: 0;
   }
 
   .skills-list {
-    margin-left: 15%;
-    gap: 30px;
+    justify-content: center;
+    gap: 15px;
   }
 
   .about-image img {
-    max-width: 350px;
-    margin: 0 auto;
-    display: block;
-    margin-top: 30px;
+    max-width: 300px;
+  }
+}
+
+/* Mobile small screens */
+@media screen and (max-width: 480px) {
+  .about-text h1,
+  .about-text h2 {
+    font-size: 1.6rem;
   }
 
-  .together {
-    margin-left: 15%;
-    margin-top: -3%;
+  .skills-list li {
+    font-size: 0.9rem;
+  }
+
+  .about-image img {
+    max-width: 250px;
   }
 }

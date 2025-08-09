@@ -8,7 +8,7 @@ const Service = () => {
     <Navbar/>
     <div className="services-container">
       <header className="services-header">
-        <h1 className="services-title">
+        <h1 className="services-title"> 
           <span className="icon">▶</span> <b>Services</b><span className="dot">.</span>
         </h1>
       </header>
