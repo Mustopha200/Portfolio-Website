@@ -25,7 +25,7 @@ const Home = () => {
             websites to dynamic platforms, we create what your brand deserves.
           </p>
           <div className="buttons">
-            <button className="btn btn-black">Contact</button>
+            <button className="btn btn-black"><a href="./about">Contact</a></button>
             <button className="btn btn-grey">Services</button>
           </div>
         </div>

@@ -6,24 +6,31 @@
   overflow-x: hidden; /* prevent horizontal scroll */
 }
 
-.about-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 60px 5%;
-  gap: 40px;
-  flex-wrap: wrap;
+.about-header {
+     display: flex;
+     flex-direction: row-reverse;
+     align-items: center;
+     justify-content: space-between;
+     flex-wrap: wrap;
 }
 
+.bg{
+  width: 500px;
+  height: auto;
+  margin: auto;
+  display: block;
+  margin-bottom: 140px;
+  margin-right: 10rem;
+}
 .about-text {
   flex: 1 1 300px;
   min-width: 250px;
+  margin-left: 6rem;
 }
 
 .about-text h1,
 .about-text h2 {
   font-size: clamp(1.8rem, 5vw, 3.5rem);
-  margin-bottom: 20px;
 }
 
 .arrow {
@@ -54,23 +61,6 @@
   font-size: 1rem;
 }
 
-.about-image {
-  flex: 1 1 300px;
-  display: flex;
-  justify-content: center;
-}
-
-.about-image img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 5px;
-  height: auto;
-}
-
-.together {
-  margin-bottom: 20px;
-}
-
 /* Tablet and below */
 @media screen and (max-width: 768px) {
   .about-content {
@@ -82,6 +72,7 @@
 
   .about-text {
     text-align: center;
+    margin-left: 0;
   }
 
   .about-text p {
@@ -93,7 +84,7 @@
     gap: 15px;
   }
 
-  .about-image img {
+  .bg {
     max-width: 300px;
   }
 }
@@ -105,11 +96,15 @@
     font-size: 1.6rem;
   }
 
+  .about-text {
+    text-align: center;
+}
+
   .skills-list li {
     font-size: 0.9rem;
   }
 
-  .about-image img {
+  .bg {
     max-width: 250px;
   }
 }

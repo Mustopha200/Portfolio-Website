@@ -4,18 +4,16 @@ import './navbar.css';
 
 const navbar = () => {
   return (
-    <nav className="navbar">
-      <div className="logo">
-        <span className="logo-bold">Toffa</span> <span className="logo-light">DEVS</span>
-      </div>
-      <ul className="nav-links">
-       <Link to="/"><li className="active">Home</li></Link>
-       <Link to="/about"><li className="active">About</li></Link>
-       <Link to="/service"><li className="active">Service</li></Link>
-       <Link to="/project"><li className="active">Projects</li></Link>
+      <div className="navbar">
+        <h1><span className="logo-bold">Toffa</span> <span className="logo-light">DEVS</span></h1>
+        <ul className="nav-links">
+          <Link to="/"><li>Home</li></Link> 
+          <Link to="/about"><li>About</li></Link>
+          <Link to="/service"><li>Service</li></Link>
+          <Link to="/project"><li>Project</li></Link>
       </ul>
-      <div className="nav-icon">😎</div> 
-    </nav>
+      </div>
+    
   );
 };
 
